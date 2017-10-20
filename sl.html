@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>申论测评</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+		html, body, div, p {
+			margin: 0;padding: 0;
+			box-sizing: border-box;
+		}
+		#main {
+			width: 1000px; margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		#title {
+			width: 100%;
+			height: 60px;
+			background-color: #336633;
+		    line-height: 60px;
+		    color: #fff;
+		    font-size: 16px;
+		    padding-left: 40px;
+		}
+		#title .time {
+			margin-left: 20px;
+		}
+		#title .timectrl {
+			border: 1px solid #fff;
+			color: #fff;
+			border-radius: 5px;
+			height: 40px;
+			line-height: 30px;
+			padding: 5px 10px 5px 10px;
+			margin-top: 10px;
+			cursor: pointer;
+			margin-left: 20px;
+		}
+		#title .timectrl:hover {
+			background-color: #006699;
+		}
+
+		#title .save {
+			border: 1px solid #fff;
+			color: #fff;
+			border-radius: 5px;
+			float: right;
+			height: 40px;
+			line-height: 30px;
+			padding: 5px 10px 5px 10px;
+			margin-top: 10px;
+			margin-right: 30px;
+			cursor: pointer;
+		}
+		#title .save:hover {
+			background-color: #006699;
+		}
+		.material {
+			width: 100%;
+			border: 1px solid #336633;
+			position: relative;
+			margin-top: 20px;
+		}
+		.material .mtheader {
+			position: absolute;
+			width: 80px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			background-color: #fff;
+			color: #336633;
+			left: 20px; top: -20px;
+			font-size: 20px;
+		}
+		.material .mtbody {
+			padding: 20px;
+		}
+
+		#main .question {
+			margin-top: 60px;
+			border: 1px solid #ff3d3d;
+			position: relative;
+			padding: 20px;
+			max-width: 1000px;
+		}
+		.qheader {
+			width: 100px;
+			height: 40px;
+			line-height: 40px;
+			position: absolute;
+			left: -1px;
+			top: -40px;
+			background-color: #fff;
+			border: 1px solid #ff3d3d;
+			border-bottom: none;
+			text-align: center;
+			color: #ff3d3d;
+			font-size: 20px;
+		}
+		.answer {
+			width: 1000px;
+			border: 1px solid #000;
+			min-height: 100px;
+			margin-top: 60px;
+			position: relative;
+		}
+		.answer .ansheader {
+			width: 100px;
+			height: 40px;
+			line-height: 40px;
+			position: absolute;
+			left: -1px;
+			top: -40px;
+			background-color: #fff;
+			border: 1px solid #000;
+			border-bottom: none;
+			text-align: center;
+			color: #000;
+			font-size: 20px;
+		}
+		.answer .ansbody {
+			padding: 20px;
+			padding-bottom: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<span class="name">
+			2017年10月20日，申论考题。
+		</span>
+		<span class="time">
+			用时：00小时00分00秒
+		</span>
+		<span class="start timectrl">
+			开始
+		</span>
+		<span class="stop timectrl">
+			暂停
+		</span>
+		<div class="save">
+			保存并提交答卷
+		</div>
+	</div>
+	<div id="main">
+
+		<div class="material">
+			<div class="mtheader">
+				资料1
+			</div>
+			<div class="mtbody">
+					党的十八大以来，习近平总书记提出一系列关于国际传播的重要论述，强调：“要创新对外宣传方式，着力打造融通中外的新概念、新范畴、新表述，讲好中国故事，传播好中国声音”“着力打造一批形态多样、手段先进、具有竞争力的新型主流媒体，建成几家拥有强大实力和传播力、公信力、影响力的新型媒体集团”。当前，媒体业正在发生深刻变革。随着信息技术特别是数字技术和网络技术的快速发展，世界主流媒体呈现出全球化、融合化、本土化、品牌化发展态势。
+					<br>
+　　				中国故事是对外话语体系建设的载体。讲好故事，事半功倍。习近平总书记在文化交流中是讲故事的					积极倡导者和发展者，在对外交往中讲了许多脍炙人口的故事，从感情上拉近与国外受众的距离。当					前，中国人民在中国共产党的领导下，追求和实现中国梦的生动实践，本身就是鲜活的“中国故事”。				要把讲故事作为国际传播基本功，把一个个普通中国人和中国家庭的故事，用具体、生动、有情感、有细				节的方式与内容讲述出来，呈现中国社会生活变迁，反映中国人民精神追求，使国外受众能具体形象地感				知中国、理解中国、喜欢中国。
+			</div>
+		</div>
+
+		<div class="material">
+			<div class="mtheader">
+				资料2
+			</div>
+			<div class="mtbody">
+					综艺真人秀节目如今已成为赢得中国观众收视的主力军，但频繁采用引进模式的中国综艺．下一个现象级节目在哪里呢?套用农夫山泉的一则宣传广告语—“我们不生产水，我们只是大自然的搬运工”来形容当下中国综艺真人秀节目非常贴切，“我们不生产原创节目，我们只是国外模式的搬运工”。像《中国好声音》《我是歌手》《舞林争霸》《爸爸去哪儿》《最强大脑》《奔跑吧兄弟》等，基本是花巨资从国外买进版权的。《中国好声音》的版本来自于荷兰，引进时花了350万元；《我是歌手》的版权来自于韩国MBC电视台；而《舞林争霸》版本来自于美国，东方卫视为50万英镑的版权费埋单。必须看到的是，在当下的电视综艺节目中，引进过多，一哄而上，导致了不少问题。电视综艺节目搞“拿来主义”由来已久，到国外购买版权，或者移花接木模仿类似节目的电视台比比皆是，并形成“同质跟风和山寨模仿”的怪象，这充分表明，中国电视综艺节目缺乏原创能力，只是依靠购买和模仿甚至抄袭维持着短暂的繁荣。
+
+　　一些节目追求“轰动效应”“尺度较大”，为“博眼球”而不惜在内容上行走在道德的边缘和法律法规的边缘，只要监管放松，就会在拜金、恶俗、窥私、恶意竞争、人性弱点等方面打“擦边球”，这在西方文化中也属于糟粕。不加辨析筛选，一切都拿来“秀”，娱乐至上，收视率至上，经济利益至上，忘记了在娱乐之上还有真善美，在经济利益之上还有社会效益。
+
+　　购买和引进这类电视综艺节目，这也暴露出我们中国本土电视人原创意识十分淡薄，原创能力也十分有限，根本不知道当今的潮流文化，也不知道观众到底喜欢什么样的电视综艺节目，缘于这样的“底气不足”，只好花钱“借鸡来生蛋”和“拷贝无极限”。腾讯视频综艺负责人马延琨指出模式热的问题在于，“对引进节目恨不得花几亿元都行，但哪怕拿出几百万元做一个原创节目，就都不愿意”。更让人费解的是，我们引进国外优秀的电视综艺节目，看重的往往是表皮的、格式的东西，却不会学习借鉴他们先进的创作理念和制作模式。在国外，一档电视综艺节目，通常由独立的制作公司进行研究和设计，创意获得电视台采纳之后再投放市场．形成了一条比较成熟的文化创意产业链，虽然我们国内有些电视台和影视制作团体同样设立有类似机构，但由于缺乏对文化产业的认知，缺乏对受众的调查，缺乏对市场研判的能力，导致原创的具有广泛市场竞争力的电视综艺节目乏善可陈。
+
+　　2014年尽管有多个原创文化节目相继上档，但不管是社会影响力还是收视效果皆不如2013年火爆。除央视之外，原创文化节目目前主要集中在二三线卫视平台。和2013年大热的《中国汉字听写大会》《汉字英雄》相比，2014年未出现类似的现象级节目。原创文化节目收视“遇冷”，究其原因，既有现有节目的主题、形式过于集中类似而分流了观众的因素．也是由于一些节目在深挖内涵、观照现实方面有所欠缺，难以保持观众的收视热情。纵观2014年原创文化节目，虽然主题各有侧重，却大多集中在文字、诗词、历史等人文领域。节目形式多效仿《中国汉字听写大会》比赛加嘉宾点评的办法，比赛方式限于书写、猜词、接龙等，相互之间的差异不甚明显，真正有创新、有特点的节目并不多见。这种一拥而上且过于相似的状况迅速降低了观众对这类节目的新鲜感。事实上，我国优秀传统文化中可供挖掘、适合表现的元素很多．诸如服饰、美食、戏曲等，原创文化节目应进一步在选题和具体的表现手法上拓宽思路、锐意创新、准确定位，避免跟风和同质化的现象出现。
+　　2014年荧屏劲吹传统文化风的确可喜，但我们不能止步于此。原创文化节目还应认真思考如何创新，才能走出“文化苦旅”，真正迎来收视“春天”
+			</div>
+		</div>
+
+		<div class="question">
+			<div class="qheader">
+				问题一
+			</div>
+			<div class="qbody">
+				结合“给定资料2”，简要概括目前我国综艺节目存在的问题。[要求：全面准确，分条归纳。不超过250字。](15分)
+			</div>
+		</div>
+
+		<div class="answer">
+			<div class="ansheader">
+				你的答案
+			</div>
+			<div class="ansbody" contenteditable="true">
+				
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
